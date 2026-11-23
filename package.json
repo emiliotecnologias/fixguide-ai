@@ -1,0 +1,23 @@
+{
+  "name": "fixguide-ai",
+  "private": true,
+  "version": "0.1.0",
+  "description": "FixGuide AI — hands-free phone-repair assistant for Even Realities G2 (Heads Up hackathon, Track 04: AI Assistants & Work)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "server": "node server/server.mjs",
+    "sim": "evenhub-simulator http://localhost:5173"
+  },
+  "devDependencies": {
+    "@evenrealities/evenhub-cli": "^0.2.0",
+    "@evenrealities/evenhub-simulator": "^0.9.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.16"
+  }
+}

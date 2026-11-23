@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixGuide AI — G2 repair assistant</title>
+  </head>
+  <body>
+    <main id="demo-shell">
+      <h1>FixGuide AI</h1>
+      <p id="mode-label">Starting…</p>
+
+      <!-- 576x288 G2 display emulation (used only when no Even host is present) -->
+      <div id="glasses-frame">
+        <pre id="glasses-screen">Loading…</pre>
+      </div>
+
+      <div id="controls">
+        <button id="btn-up" type="button">▲ Scroll up</button>
+        <button id="btn-down" type="button">▼ Scroll down</button>
+        <button id="btn-next" type="button">Tap · Next</button>
+        <button id="btn-back" type="button">2× Tap · Back</button>
+        <button id="btn-voice" type="button">Hold to talk</button>
+      </div>
+
+      <div id="type-row">
+        <input id="cmd-input" type="text" placeholder='Type a voice command — e.g. note replaced the port · tools · what if current draw is zero?' />
+        <button id="cmd-send" type="button">Send command</button>
+      </div>
+
+      <p class="hint">
+        Keyboard: Enter/→ next · ←/Backspace back · ↑↓ scroll · hold Space to talk.
+        No microphone? Type the command above instead — it goes through the same
+        voice-command path. In the Even Hub simulator or on G2 hardware this shell
+        is invisible — the app renders natively on the glasses display.
+      </p>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
